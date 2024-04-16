@@ -50,7 +50,7 @@ function App() {
             </div>
             <div className="icon-part">
               <img
-                src={`../../src/assets/weather-icons/${ICON_MAP.get(
+                src={`https://raw.githubusercontent.com/nguyenhuuthinh1208/react-weather-app/main/src/assets/weather-icons/${ICON_MAP.get(
                   data[0].iconCode
                 )}.svg`}
                 alt="Weather Icon"
