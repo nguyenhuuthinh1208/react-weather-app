@@ -1,0 +1,76 @@
+ul {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  z-index: 999;
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.title {
+  color: #eee;
+  font-size: 1.25rem;
+  padding: 2em 0.75em 0.5em;
+}
+
+ul > li {
+  color: #eee;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul > li > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-selectable > li.selected {
+  outline: 1px solid rgba(146, 146, 146, 1);
+}
+
+.list-selectable > li.selected > span > button {
+  opacity: 1;
+}
+
+ul > li > span {
+  min-width: 30%;
+  word-wrap: break-word;
+}
+
+ul > li > span:first-of-type {
+  justify-content: flex-start;
+}
+
+ul > li > span:last-of-type {
+  justify-content: flex-end;
+}
+.list-selectable > li {
+  cursor: pointer;
+}
+.list-selectable > li:not(.selected):hover {
+  background-color: rgba(146, 146, 146, 0.2);
+}
+
+.list-selectable > li:hover > span > button {
+  opacity: 1;
+}
+
+span > img {
+  object-fit: contain;
+  width: 30px;
+}
+
+button {
+  z-index: 10;
+  opacity: 0;
+  margin-left: 1em;
+  font-size: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 200ms;
+  border: none;
+  color: #eee;
+}

@@ -1,0 +1,45 @@
+.app {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  overflow: hidden;
+}
+
+.current {
+  color: #eee;
+  display: flex;
+  position: absolute;
+  bottom: 100px;
+  font-weight: 100;
+  left: 100px;
+  align-items: end;
+  gap: 5em;
+}
+
+.temp {
+  font-size: 10rem;
+  line-height: 8rem;
+  font-weight: 400;
+}
+
+.location {
+  font-size: 1.75rem;
+}
+
+.icon-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.icon-part > img {
+  object-fit: contain;
+  width: 100px;
+}
+
+.icon-part > span {
+  text-transform: capitalize;
+}
